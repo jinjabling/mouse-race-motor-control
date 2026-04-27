@@ -56,10 +56,10 @@ void do_Uart_Tick() {
     lastCommandTime = millis(); // reset timer on new command
 //Using the number received to execute a command
     switch (command) {
-      case '2': go_Advance(); set_Motorspeed(255, 255); break;
-      case '4': go_Left(); set_Motorspeed(255, 255); break;
-      case '6': go_Right(); set_Motorspeed(255, 255); break;
-      case '8': go_Back(); set_Motorspeed(255, 255); break;
+      case '2': go_Advance(); set_Motorspeed(200, 200); break;
+      case '4': go_Left(); set_Motorspeed(200, 200); break;
+      case '6': go_Right(); set_Motorspeed(200, 200); break;
+      case '8': go_Back(); set_Motorspeed(200, 200); break;
       case '5': stop_Stop(); break;
       default: break;
     }
